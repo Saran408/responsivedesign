@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from designapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('responsivedesign/',views.responsivedesign,name='responsivedesign')
 ]
